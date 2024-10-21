@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator GOGO</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<body class="bg-gray-700 p-5">
+     <!-- meme generator -->
+     <h1 class="mt-8 text-3xl text-center text-white bg-black p-14 ">Meme Generator</h1>
+    
+    <!-- custom image ulpad -->
+    <div class="upload mb-5 mt-8 p-4">
+        <h2 class="text-white text-3xl font-bold text-center" >Upload Images</h2>
+      <input type="file" id="imageUpload" accept="image/*"
+      multiple
+      class="w-full text-lg text-slate-500 file:mr-4 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:gb-violet-100">    
+    </div>
+    <div class="images grid grid-cols-3 gap-4 mb-10" id="imageContainer">
+        <!-- uploaded images will be displayed here -->
+    </div>
+    <!-- custom categories  -->
+     <div class="custom-caregory mb-5">
+        <h2 class="text-white text-3xl font-bold text-center underline" >Custom Categories</h2>
+        <input type="text" id="categoryName" placeholder="Enter Category Name" class="text-sm p-2 border rounded">
+        <input type="color" id="categoryColor" class="border rounded">
+        <button id="addCategory" class="bg-violet-500 mx-4 text-white p-2 rounded hover:bg-violet-400">Add Category</button>
+     </div>
+
+    <!-- add custom category -->
+     <div class="categories space-y-3 p-8" id="categories">
+        test
+     </div>
+
+   
+    <!-- Commented code -->
+    <!-- <div class="categories space-y-3 mt-10 p-8">
+        <div id="god" class="drop-zone bg-green-300 p-3 flex flex-row space-x-3 overflow-auto">
+            <h1 class="text-xl font-bold">God</h1>
+        </div>
+        <div id="decent" class="drop-zone bg-blue-300 p-3 flex flex-row space-x-3 overflow-auto">
+            <h1 class="text-xl font-bold">Decent</h1>
+        </div>
+            <div id="average" class="drop-zone bg-yellow-300 p-3 flex flex-row space-x-3 overflow-auto">
+                <h1 class="text-xl font-bold">Average</h1>
+            </div>
+            <div id="trash" class="drop-zone bg-red-300 flex p-3 flex-row space-x-3 overflow-auto">
+                <h1 class="text-xl font-bold">Trash</h1>
+            </div>
+            <div id="intolerable" class="drop-zone bg-gray-300 p-3 flex flex-row space-x-3 overflow-auto">
+                <h1 class="text-xl font-bold">Inntolerable</h1>
+            </div>
+    </div>
+    <div class="images mt-10 grid grid-cols-3 gap-3">
+        <img width="200px" src="https://via.placeholder.com/150" alt="Image 1" id="image1" class="draggable" draggable="true">
+        <img width="200px" src="https://via.placeholder.com/150" alt="Image 2" id="image2" class="draggable" draggable="true">
+        <img width="200px" src="https://via.placeholder.com/150" alt="Image 3" id="image3" class="draggable" draggable="true">
+        <img width="200px" src="https://via.placeholder.com/150" alt="Image 4" id="image4" class="draggable" draggable="true">
+    </div>     -->
+    <script src="./script.js"></script>
+</body>
+</html>
